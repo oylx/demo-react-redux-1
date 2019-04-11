@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import {connect} from 'react-redux'
+import Hook from './hookDemo'
 import {bindActionCreators} from 'redux'
 
 class App extends Component {
@@ -15,6 +16,8 @@ class App extends Component {
                     <button id="add3" onClick={() => this.props.add3()}>如果单数+1</button>
                     <button id="add4" onClick={this.props.add4}>两秒后+1</button>
                 </div>
+                hook:
+                <Hook></Hook>
             </div>
         );
     }
